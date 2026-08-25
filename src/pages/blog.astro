@@ -1,13 +1,14 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 const pageTitle = "Blog Page";
 ---
+
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
   </head>
@@ -22,5 +23,8 @@ const pageTitle = "Blog Page";
       <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
     <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
